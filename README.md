@@ -1,1 +1,19 @@
 # landing-page
+<hr>
+<br>
+
+## Links
+
+<hr>
+Live site: https://garamgim.github.io/landing-page/
+Link to the assignment: https://www.theodinproject.com/lessons/foundations-landing-page
+<br>
+<br>
+
+## About
+
+<hr>
+This assignment is about creating an entire webpage just from the image of a design provided, which makes students start from a black HTML & CSS document.<br>
+I had so much fun creating everything by my own for the first time! <br>
+Now I understand more clearly about concepts of semantic HTML and CSS flexbox.
+<br>
