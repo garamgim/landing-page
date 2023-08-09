@@ -1,8 +1,8 @@
 body {
     display: flex;
-
     flex-direction: column;
     margin: auto;
+    font-family: 'VT323', monospace;
 }
 
 header,
@@ -15,6 +15,23 @@ footer {
 
 section {
     padding: 8%;
+}
+
+button {
+    font-family: 'Creepster', cursive;
+    padding: 0.5em 1em;
+    font-size: 1.5em;
+    border-radius: 0.7em;
+    background-color: #617A55;
+    color: white;
+    transition: all 0.25s;
+}
+
+button:hover {
+    background-color: #f1ff5c;
+    color: #617A55;
+    transform: translateY(-0.24em);
+    cursor: pointer;
 }
 
 /* Header Bar */
@@ -36,7 +53,10 @@ nav li {
 
 span.logo {
     white-space: nowrap;
-    margin: auto 10px;
+    margin: auto 20px;
+    padding: 10px;
+    font-size: 40px;
+    font-family: 'Creepster', cursive;
 }
 
 
@@ -48,8 +68,25 @@ section.intro {
 }
 
 section.intro>div {
-    width: 300px;
+    width: 400px;
+    padding: 1em;
 }
+
+section.intro>div>div {
+    margin: 1em;
+}
+
+div.juiceimg {
+    display: flex;
+    align-items: center;
+}
+
+div.juiceimg>img {
+    width: 400px;
+    height: 250px;
+
+}
+
 
 /* Information Section */
 
@@ -70,6 +107,8 @@ div.box {
 
 div.box>div {
     display: inline-block;
+    margin: 10px;
+    text-align: center;
 }
 
 div.box>div>img {
@@ -83,16 +122,18 @@ div.box>div>p {
     width: 150px;
 }
 
+div.button {
+    display: flex;
+    justify-content: center;
+}
+
 
 /* Quote Section */
 
-section.info {
-    display: flex;
-    flex-direction: column;
-}
 
 .quote {
     background-color: #F7FFE5;
+    font-size: 1.5em;
 }
 
 div.quote {
@@ -100,6 +141,7 @@ div.quote {
 }
 
 p.who {
+    font-size: 0.7em;
     text-align: end;
 }
 
