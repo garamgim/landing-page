@@ -1,0 +1,129 @@
+body {
+    display: flex;
+
+    flex-direction: column;
+    margin: auto;
+}
+
+header,
+footer {
+    width: 100%;
+    background-color: #A0C49D;
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    padding: 8%;
+}
+
+/* Header Bar */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul {
+    list-style-type: none;
+    display: inline;
+}
+
+nav li {
+    display: table-cell;
+    padding: 0 10px;
+}
+
+span.logo {
+    white-space: nowrap;
+    margin: auto 10px;
+}
+
+
+/* Header Intro Section */
+
+section.intro {
+    display: flex;
+    justify-content: space-around;
+}
+
+section.intro>div {
+    width: 300px;
+}
+
+/* Information Section */
+
+section.info {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+section.info>h2 {
+    text-align: center;
+}
+
+div.box {
+    display: flex;
+    justify-content: center;
+}
+
+div.box>div {
+    display: inline-block;
+}
+
+div.box>div>img {
+    width: 150px;
+    height: 150px;
+    border: solid 2px #A0C49D;
+    border-radius: 10px;
+}
+
+div.box>div>p {
+    width: 150px;
+}
+
+
+/* Quote Section */
+
+section.info {
+    display: flex;
+    flex-direction: column;
+}
+
+.quote {
+    background-color: #F7FFE5;
+}
+
+div.quote {
+    margin: 5%;
+}
+
+p.who {
+    text-align: end;
+}
+
+/* Promo Section */
+
+
+div.promobox {
+    background-color: #C4D7B2;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px;
+    height: 150px;
+}
+
+div.promotext {
+    margin: auto;
+}
+
+div.button {
+    margin: auto;
+}
+
+/* Footer */
+
+footer {
+    align-items: center;
+}
