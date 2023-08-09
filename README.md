@@ -1,5 +1,4 @@
 # landing-page
-<br>
 
 ## Links
 
