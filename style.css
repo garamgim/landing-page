@@ -19,12 +19,14 @@ section {
 
 button {
     font-family: 'Creepster', cursive;
-    padding: 0.5em 1em;
-    font-size: 1.5em;
-    border-radius: 0.7em;
+    padding: 8px 16px;
+    height: 70px;
+    font-size: 24px;
+    border-radius: 16px;
     background-color: #617A55;
     color: white;
     transition: all 0.25s;
+    white-space: nowrap;
 }
 
 button:hover {
@@ -39,11 +41,14 @@ button:hover {
 nav {
     display: flex;
     justify-content: space-between;
+    background-color: #75ab70;
 }
 
 nav ul {
     list-style-type: none;
-    display: inline;
+    padding: 0;
+    display: flex;
+    align-items: center;
 }
 
 nav li {
@@ -52,7 +57,6 @@ nav li {
 }
 
 span.logo {
-    white-space: nowrap;
     margin: auto 20px;
     padding: 10px;
     font-size: 40px;
@@ -79,12 +83,12 @@ section.intro>div>div {
 div.juiceimg {
     display: flex;
     align-items: center;
+
 }
 
 div.juiceimg>img {
     width: 400px;
     height: 250px;
-
 }
 
 
@@ -100,25 +104,30 @@ section.info>h2 {
     text-align: center;
 }
 
-div.box {
+div.bigbox {
     display: flex;
     justify-content: center;
 }
 
-div.box>div {
+div.middlebox {
+    display: flex;
+    justify-content: center;
+}
+
+div.smallbox {
     display: inline-block;
     margin: 10px;
     text-align: center;
 }
 
-div.box>div>img {
+div.smallbox>img {
     width: 150px;
     height: 150px;
     border: solid 2px #A0C49D;
     border-radius: 10px;
 }
 
-div.box>div>p {
+div.smallbox>p {
     width: 150px;
 }
 
@@ -157,15 +166,67 @@ div.promobox {
 }
 
 div.promotext {
-    margin: auto;
+    margin: 20px;
 }
 
 div.button {
-    margin: auto;
+    display: flex;
+    align-items: center;
+    margin: 20px;
 }
 
 /* Footer */
 
 footer {
     align-items: center;
+}
+
+
+
+
+/* Media Query */
+
+@media (max-width: 680px) {
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        background-color: #75ab70;
+    }
+
+    section.intro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    section.intro>div>div {
+        margin: 1em;
+        text-align: center;
+    }
+
+    div.bigbox {
+        flex-wrap: wrap;
+        align-content: center;
+    }
+
+    div.promobox {
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        height: 220px;
+    }
+
+    div.promotext {
+        margin: 0 20px;
+    }
+
+    div.button {
+        display: flex;
+        align-items: center;
+        margin: 0 20px;
+    }
+
+
 }
